@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Admin";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-lux.css" />
+}
+
+<style>
+    .form-container {
+        position: absolute;
+        top: 30vh;
+        padding: 30px;
+    }
+</style>
+
+
+<section class="container-fluid">
+    <section class="justify-content-center">
+        <section class="row">
+            <section class="col-12 col-sm-6 col-md-3">
+                @using (Html.BeginForm("Login", "Admin", FormMethod.Get, new { @class = "form-container" , role = "form" }))
+                {
+                        <div class="form-group">
+                            <label for="userName">Username</label>
+                            <input type="text" name="username" class="form-control" id="userName" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="passLabel">Password</label>
+                            <input type="password" name="pass" class="form-control" id="passLabel" placeholder="Password">
+                            <small id="emailHelp" class="form-text text-muted">For testing : the username is admin and password is pass</small>
+
+                        </div>
+                        <br />
+                        <button type="submit" class="btn btn-primary">Login</button>
+                }
+
+            </section>
+        </section>
+    </section>
+</section>

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Book>
+
+@{
+    ViewData["Title"] = "Manage Books";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-lux.css" />
+}
+
+
+<br />
+<br />
+<div class="row">
+    <div class="col-sm-12 text-right">
+        <button type="button" class="btn btn-primary float-end" style="margin:5px;">Delete Copy</button>
+        <button type="button" class="btn btn-primary float-end" style="margin:5px;">Add Copy</button>
+    </div>
+    </div>
+
+
+    <br />
+
+
+    <div class="row row-cols-1 row-cols-md-3">
+        @foreach (var book in Model)
+        {
+            <div class="col mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">@book.Title</h3>
+                    <p class="card-text">@book.NumberofCopies Available Copies</p>
+                    <p class="card-text"><small class="text-muted"> @book.Genre</small></p>
+
+                    <p class="card-text"><small class="text-muted"> @book.Author</small></p>
+                </div>
+
+            </div>
+        }
+    </div>
+
+
