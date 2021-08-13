@@ -62,7 +62,6 @@ D:\Projects AMK\ASP.NET\Library\Library\obj\Debug\netcoreapp3.1\scopedcss\bundle
 D:\Projects AMK\ASP.NET\Library\Library\obj\Debug\netcoreapp3.1\Library.TagHelpers.input.cache
 D:\Projects AMK\ASP.NET\Library\Library\obj\Debug\netcoreapp3.1\Library.TagHelpers.output.cache
 D:\Projects AMK\ASP.NET\Library\Library\obj\Debug\netcoreapp3.1\Library.RazorCoreGenerate.cache
-D:\Projects AMK\ASP.NET\Library\Library\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
 D:\Projects AMK\ASP.NET\Library\Library\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Projects AMK\ASP.NET\Library\Library\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Projects AMK\ASP.NET\Library\Library\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -77,3 +76,4 @@ D:\Projects AMK\ASP.NET\Library\Library\obj\Debug\netcoreapp3.1\Library.dll
 D:\Projects AMK\ASP.NET\Library\Library\obj\Debug\netcoreapp3.1\Library.pdb
 D:\Projects AMK\ASP.NET\Library\Library\obj\Debug\netcoreapp3.1\Library.genruntimeconfig.cache
 D:\Projects AMK\ASP.NET\Library\Library\obj\Debug\netcoreapp3.1\Library.csproj.AssemblyReference.cache
+D:\Projects AMK\ASP.NET\Library\Library\obj\Debug\netcoreapp3.1\Razor\Views\About\Index.cshtml.g.cs

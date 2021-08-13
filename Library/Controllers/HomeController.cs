@@ -26,13 +26,11 @@ namespace Library.Controllers
         public IActionResult Index(string keywoard)
         {
             IEnumerable<Book> books = appDbContext.Books;
-            return View(books.Where(x => keywoard == null || x.Title.Contains(keywoard) || x.Genre.Contains(keywoard)));
+            return View(books.Where(x => keywoard == null || x.Title.ToLower().Contains(keywoard.ToLower()) 
+            || x.Genre.ToLower().Contains(keywoard.ToLower()) || x.Author.ToLower().Contains(keywoard.ToLower())));
         }
 
-        public IActionResult About()
-        {
-            return View();
-        }
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
