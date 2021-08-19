@@ -13,13 +13,12 @@
 <br />
 <br />
 <div class="row">
-    <div class="col-sm-12 text-right">
-        <button type="button" class="btn btn-primary float-end" style="margin:5px;">Delete Copy</button>
-        <button type="button" class="btn btn-primary float-end" style="margin:5px;">Add Copy</button>
-    </div>
-    </div>
+    @*<div class="col-sm-12 text-right">*@
+        @*<button type="button" class="btn btn-primary float-end" style="margin:5px;">Delete Copy</button>*@
 
-
+        <button type="button" class="btn btn-primary float-end" value="Add Book" style="margin:5px;" onclick="location.href='@Url.Action("AddBook", "Admin")'"/>
+    @*</div>*@
+    </div>
     <br />
 
 
@@ -31,9 +30,25 @@
                     <h3 class="card-title">@book.Title</h3>
                     <p class="card-text">@book.NumberofCopies Available Copies</p>
                     <p class="card-text"><small class="text-muted"> @book.Genre</small></p>
-
                     <p class="card-text"><small class="text-muted"> @book.Author</small></p>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            @*<form action='@Url.Action("Put")' id="form">
+
+                                <input type="hidden" name="Id" value="@book.Id" />
+
+                                <button type="submit" class="btn btn-outline-primary" value="+" style="margin:3px;" />
+
+                            </form>*@
+
+                            <input type="button" class="btn btn-outline-primary" value="+" style="margin:5px;" onclick="location.href='@Url.Action("AddCopy", "Admin",new { Id = @book.Id })'" />
+
+                            <input type="button" class="btn btn-outline-primary" value="-" style="margin:5px;" onclick="location.href='@Url.Action("DeleteCopy", "Admin",new { Id = @book.Id })'" />
+
+                        </div>
+                    </div>
                 </div>
+
 
             </div>
         }

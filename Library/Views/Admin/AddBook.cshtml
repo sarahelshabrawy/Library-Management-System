@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Add Book";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-lux.css" />
+}
+
+<style>
+    .form-container {
+        position: absolute;
+        padding: 30px;
+    }
+</style>
+
+
+<section class="container-fluid">
+    <section class="justify-content-center">
+        <section class="row">
+            <section class="col-12 col-sm-6 col-md-3">
+                @using (Html.BeginForm("Post", "Admin", FormMethod.Post, new { @class = "form-container", role = "form" }))
+                {
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" class="form-control" id="title" placeholder="Book title : ">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Author</label>
+                        <input type="text" name="author" class="form-control" id="author" placeholder="Author : ">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Genre</label>
+                        <input type="text" name="genre" class="form-control" id="genre" placeholder="Genre : ">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Available Copies</label>
+                        <input type="text" name="copies" class="form-control" id="copies" placeholder="Number of copies: ">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Image</label>
+                        <input type="text" name="image" class="form-control" id="image" placeholder="Image URL : ">
+                    </div>
+                    <br />
+                    <button type="submit" class="btn btn-primary">Save</button>
+                }
+
+            </section>
+        </section>
+    </section>
+</section>

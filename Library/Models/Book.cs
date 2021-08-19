@@ -7,6 +7,14 @@ namespace Library.Models
 {
     public class Book
     {
+        public Book(String title,String author,String genre,int copies,String image) {
+            this.Title = title;
+            this.Author = author;
+            this.Genre = genre;
+            this.NumberofCopies = copies;
+            this.Image = image;
+        }
+        
         public int Id { get; set; }
         public String Title { get; set; }
         public String  Author { get; set; }
